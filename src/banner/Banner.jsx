@@ -29,7 +29,7 @@ const Banner = () => {
 
       <div className="space-x-2 mt-5">
 
-        <button className="btn btn-outline rounded-4xl text-white bg-gradient-to-r from-purple-700 to-purple-500">
+        <button className="btn btn-outline rounded-4xl text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] border-none">
           Explore Products
         </button>
 
@@ -55,7 +55,7 @@ const Banner = () => {
 
 
 
-    <div className="h-[200px] w-full bg-gradient-to-r from-purple-800 to-purple-600 mt-8 mb-8 ">
+    <div className="h-[200px] w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] mt-8 mb-8 ">
 
         <div className="flex justify-around gap-5 p-7 text-white  ">
             <div>

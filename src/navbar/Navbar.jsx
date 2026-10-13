@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <h2 className="text-2xl font-semibold bg-linear-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
           Digitools
         </h2>
       </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn rounded-4xl text-white bg-gradient-to-r from-purple-700 to-purple-500">
+        <a className="btn rounded-4xl text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
           Get Started
         </a>
       </div>
