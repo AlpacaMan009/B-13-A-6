@@ -5,7 +5,8 @@ import { Play } from "lucide-react";
 
 const Banner = () => {
   return (
-    <div className="w-6xl mx-auto p-8 flex gap-[60px]">
+    <>
+        <div className="w-6xl mx-auto p-8 flex gap-[60px]">
 
         {/* text section */}
 
@@ -47,7 +48,36 @@ const Banner = () => {
 
 
 
+      
+
+
     </div>
+
+
+
+    <div className="h-[200px] w-full bg-gradient-to-r from-purple-800 to-purple-600 mt-8 mb-8 ">
+
+        <div className="flex justify-around gap-5 p-7 text-white  ">
+            <div>
+            <h1 className="font-bold text-[60px] ">50K+</h1>
+            <p className="text-lg font-light text-center">Active Users</p>
+            </div>
+            
+            <div>
+            <h1 className="font-bold text-[60px] ">200+</h1>
+            <p className="text-lg font-light text-center">Premium Tools</p>
+            </div>
+
+            <div>
+            <h1 className="font-bold text-[60px] ">4.9</h1>
+            <p className="text-lg font-light text-center">Rating</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    </>
   );
 };
 
