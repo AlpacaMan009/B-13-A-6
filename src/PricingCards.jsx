@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCards = () => {
   return (
-    <div className="text-center mt-20">
+    <div className="text-center mt-30">
       <h2 className="font-semibold text-5xl">Simple, Transparent Pricing</h2>
       <p className="mt-7 font-light">
         Choose the plan that fits your needs. Upgrade or downgrade anytime.

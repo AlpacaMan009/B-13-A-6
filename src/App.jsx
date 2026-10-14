@@ -9,6 +9,8 @@ import Products from "./cart/Products";
 import Carts from "./cart/Carts";
 import GetStarted from "./GetStarted";
 import PricingCards from "./PricingCards";
+import BottomBanner from "./BottomBanner";
+import Footer from "./Footer";
 
 const getProducts = async () => {
   const res = await fetch("/model.json");
@@ -60,6 +62,8 @@ function App() {
 
       <GetStarted></GetStarted>
       <PricingCards></PricingCards>
+      <BottomBanner></BottomBanner>
+      <Footer></Footer>
     </>
   );
 }
