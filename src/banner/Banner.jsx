@@ -57,7 +57,7 @@ const Banner = () => {
 
     <div className="w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] mt-8 mb-8 py-10">
 
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-around justify-center items-center gap-8 text-white px-4">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between  gap-8 text-white px-4">
             <div>
             <h1 className="font-bold text-4xl sm:text-5xl lg:text-[60px]">50K+</h1>
             <p className="text-lg font-light text-center">Active Users</p>
