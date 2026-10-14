@@ -7,6 +7,8 @@ import Navbar from "./navbar/Navbar";
 import Banner from "./banner/Banner";
 import Products from "./cart/Products";
 import Carts from "./cart/Carts";
+import GetStarted from "./GetStarted";
+import PricingCards from "./PricingCards";
 
 const getProducts = async () => {
   const res = await fetch("/model.json");
@@ -45,6 +47,8 @@ function App() {
         />
         
       </div>
+
+
       {activeTab === 'product' && <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
@@ -52,6 +56,10 @@ function App() {
       </Suspense>}
 
       {activeTab === 'carts' && <Carts carts = {carts} setCarts = {setCarts}></Carts>}
+
+
+      <GetStarted></GetStarted>
+      <PricingCards></PricingCards>
     </>
   );
 }

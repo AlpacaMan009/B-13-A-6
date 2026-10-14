@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+
 
 const ProductCart = ({product, carts, setCarts}) => {
 
@@ -16,7 +18,7 @@ const ProductCart = ({product, carts, setCarts}) => {
 
 
         setCarts([...carts,product])
-        // toast.success('Item added to cart!')
+        toast.success('Item added to cart!')
     
     }
     return (
