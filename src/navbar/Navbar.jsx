@@ -1,8 +1,8 @@
 import React from "react";
 
-    import { ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm px-6">
       <div className="navbar-start">
@@ -44,9 +44,18 @@ const Navbar = () => {
             <li>
               <a>FAQ</a>
             </li>
+
             <li>
-              <a><ShoppingCart /></a>
+              <a className="relative">
+                <ShoppingCart />
+                {carts.length > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                    {carts.length}
+                  </span>
+                )}
+              </a>
             </li>
+
             <li>
               <a>Login</a>
             </li>
@@ -76,10 +85,17 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex gap-3 navbar-end  ">
-        <div className="hidden lg:block" >
+        <div className="hidden lg:block">
           <ul className="flex gap-3 items-center justify-center ">
             <li>
-              <a><ShoppingCart /></a>
+              <a className="relative">
+                <ShoppingCart />
+                {carts.length > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                    {carts.length}
+                  </span>
+                )}
+              </a>
             </li>
             <li>
               <a>Login</a>

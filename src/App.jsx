@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts = {carts}></Navbar>
       <Banner></Banner>
 
       {/* name of each tab group should be unique */}
